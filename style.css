@@ -349,9 +349,15 @@ section.experience > .experience__section__title {
 
 section.experience .experiencie__box {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 16px;
     width: 100%;
+}
+
+/* aplica o estilo a todos os elementos com indice multiplo de 2 (0, 2, 4)*/
+section.experience .experiencie__box:nth-child(2n+0) {
+    flex-direction: row;
 }
 
 section.experience .experiencie__box .experience__img {
@@ -510,7 +516,6 @@ section.formcontato .formcontato__contacto .formcontato__text .formcontato__form
     cursor: pointer;
 }
 
-
 /*footeer*/
 
 section.footer{
@@ -520,7 +525,6 @@ section.footer{
     justify-content: center;
     background-color: var(--cor-de-fundo-branco);
 }
-
 
 section.footer > .footer__rodape {
     text-align: center;
